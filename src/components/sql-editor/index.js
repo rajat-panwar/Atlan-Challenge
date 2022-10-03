@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic"
-import { Suspense, useRef, useState } from "react"
+import { useRef, useState } from "react"
 import ResultSection from '../result'
 import SuggestionList from '../suggestion-list'
 import styles from './SqlEditor.module.css'
@@ -7,7 +7,8 @@ import { AVAILABLE_TABLE_NAMES } from "../../store/constants"
 import { srFetchQuery } from '../../sources/sql-query'
 
 const DynamicEditor = dynamic(() => import('../editor'), {
-    suspense: true
+    loading: () => <div>loading ...</div>,
+    ssr: false
 })
 
 export default function SqlEditor () {
@@ -121,19 +122,17 @@ export default function SqlEditor () {
     return (
         <div className={styles.container}>
             <div className={styles.col1} >
-                <Suspense fallback={`Loading ....`}>
-                    <DynamicEditor
-                        query={query}
-                        setQuery={setQuery}
-                        runQuery={runQuery}
-                        activeEditorIndex={activeEditorIndex}
-                        setActiveEditorIndex={setActiveEditorIndex}
-                        deleteCurrentTab={deleteCurrentTab}
-                        result={result}
-                        setResult={setResult}
-                        isLoading={isLoading}
-                    />
-                </Suspense>
+                <DynamicEditor
+                    query={query}
+                    setQuery={setQuery}
+                    runQuery={runQuery}
+                    activeEditorIndex={activeEditorIndex}
+                    setActiveEditorIndex={setActiveEditorIndex}
+                    deleteCurrentTab={deleteCurrentTab}
+                    result={result}
+                    setResult={setResult}
+                    isLoading={isLoading}
+                />
                 <div
                     className={styles.resizer}
                     id="dragMe"

@@ -6,11 +6,11 @@ import { useVirtual } from 'react-virtual'
 const Result = ({ result = [], isLoading = false}) => (
     <div className={style.container}>
         <div>Output</div>
-        {resultTable(result, isLoading)}
+        <ResultTable result={result} isLoading={isLoading} />
     </div>
 )
 
-const resultTable = (result = [], isLoading) => { 
+const ResultTable = ({result = [], isLoading}) => { 
     const parentRef= useRef()
     const rowVirtualizer = useVirtual({
         size: result.length-1,
