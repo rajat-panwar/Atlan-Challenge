@@ -16,7 +16,10 @@ This is a dummy application specific to problem statement given by atlan and it'
 
 2. For measuring rendering of large number of rows in application without lagging I have used Chrome Dev Tools Frames Per Second Meter giving range between 57-58.5 FPS.
 
-I'm attaching scrrenshot of Lighthouse report below.
+I'm attaching pdf of Lighthouse report below.
+
+[Lighthouse-report.pdf](https://github.com/rajat-panwar/Atlan-Challenge/files/9697973/Lighthouse-report.pdf)
+
 
 ## Optimisation
 - Used React.memo, dynamic import of components, memoize the response of api calls to improve the overall performance of application.
