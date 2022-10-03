@@ -1,4 +1,4 @@
-<h1 align="center">[SQL Editor - Made in React](https://senior-frontend-challenge-rajat-panwar.vercel.app/)</h1>
+[<h1 align="center">SQL Editor - Made in React</h1>](https://senior-frontend-challenge-rajat-panwar.vercel.app/)
 <br>
 
 Link to the application - https://senior-frontend-challenge-rajat-panwar.vercel.app/
