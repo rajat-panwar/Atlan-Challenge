@@ -1,6 +1,9 @@
 <h1 align="center">SQL Editor - Made in React</h1>
 <br>
 
+Link to the application - https://senior-frontend-challenge-rajat-panwar.vercel.app/
+<br>
+
 ## Overview
 This application is created using nextjs bootstrapped with create-react-app. 
 
