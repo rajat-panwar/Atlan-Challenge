@@ -1,0 +1,58 @@
+.container {
+    height: 50%;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 10px;
+}
+
+.result {
+    margin-top: 10px;
+    height: 90%;
+    overflow-y: auto;
+}
+
+.noResult {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table {
+    height: 100%;
+    overflow: auto;
+    display: block;
+    border-spacing: 0px;
+}
+
+.table::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+.table::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.table::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.table::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}
+.cellElement {
+    font-size: 14px;
+    padding: 10px 8px;
+    border-bottom: 0.2px solid rgb(209, 213, 219);
+    background: rgb(249, 250, 251);
+}
+
+.headerElement {
+    border-bottom: 0.2px solid rgb(209, 213, 219);
+    background-color: rgb(14, 165, 233);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 15px 8px;
+    text-align: left;
+}
