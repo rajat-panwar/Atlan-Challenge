@@ -19,6 +19,7 @@ This is a dummy application specific to problem statement given by atlan and it'
 I'm attaching pdf and screenshot of Lighthouse report below.
 
 [Lighthouse-report.pdf](https://github.com/rajat-panwar/Atlan-Challenge/files/9697973/Lighthouse-report.pdf)
+<br>
 <img width="1792" alt="Screenshot 2022-10-03 at 7 08 08 PM" src="https://user-images.githubusercontent.com/61053683/193592665-ce5b3755-6b30-4455-becd-582f670675f0.png">
 
 
